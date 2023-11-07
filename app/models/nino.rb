@@ -1,0 +1,2 @@
+class Nino < ApplicationRecord
+end
