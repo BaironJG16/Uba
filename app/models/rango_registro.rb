@@ -1,0 +1,2 @@
+class RangoRegistro < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class RangoController < ApplicationController
+end

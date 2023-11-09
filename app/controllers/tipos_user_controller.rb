@@ -1,0 +1,2 @@
+class TiposUserController < ApplicationController
+end

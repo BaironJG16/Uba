@@ -1,0 +1,2 @@
+class RangoRegistroController < ApplicationController
+end

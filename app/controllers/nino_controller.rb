@@ -1,0 +1,2 @@
+class NinoController < ApplicationController
+end
