@@ -18,6 +18,7 @@ gem 'devise', '~> 4.9', '>= 4.9.3'
 gem 'pundit', '~> 2.3', '>= 2.3.1'
 gem 'byebug', '~> 11.1', '>= 11.1.3'
 gem 'rolify', '~> 6.0', '>= 6.0.1'
+gem 'rack-cors', '~> 2.0', '>= 2.0.1'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"

@@ -71,7 +71,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_09_151943) do
     t.index ["servicio_id"], name: "index_servicios_ninos_on_servicio_id"
   end
 
-  create_table "tipos_users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "type_users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "nombre"
     t.string "apellido"
     t.string "puesto"
@@ -85,6 +85,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_09_151943) do
     t.integer "cedula"
     t.string "correo"
     t.string "direccion"
+    t.string "password", limit: 50
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
