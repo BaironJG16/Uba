@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import SignUp from './Pages/SignUp/SignUp';
 import Footer from './Components/Footer/Footer';
 import PrincipalPge from './Pages/PrincipalPage/PrincipalPage';
+import Invetory from './Pages/Inventory/Invetory';
 
 function App() {
 
@@ -23,7 +24,13 @@ function App() {
     {
       path: "/principalPage",
       element: <PrincipalPge></PrincipalPge>
-    }
+    },
+
+    {
+      path: "/Inventory",
+      element: <Invetory></Invetory>
+   
+    },
 
   ])
 
