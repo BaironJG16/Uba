@@ -1,50 +1,56 @@
 import React from 'react'
 import "./SignUp.css"
-import { useNavigate } from 'react-router-dom';
+import uva from '../../assets/img/uva.png';
+import NavBar from '../../Components/NavBar/NavBar';
+
+
 
 function SignUp() {
 
-    const navigation = useNavigate();
-
-    function handleLogin() {
-    console.log("hola")
-    navigation('/')
-    }
 
 
   return (
+    
     <div>
-        <form class="form">
-    <p class="title">Register </p>
-    <p class="message">Registrate para tener acceso a UVA. </p>
+
+    <header><NavBar></NavBar> </header>
+      <img className='uvaLogo2' src={uva} alt='uva logo'></img>
+      <p className='eslogan2'> UVA App, organiza y administra <br/>
+       tu empresa de la mejor manera. </p>
+
+    <div>
+        <form className="form">
+    <p className="title">Registrate </p>
+    <p className="message">Registrate para tener acceso a UVA. </p>
         <div class="flex">
         <label>
-            <input class="input" type="text" placeholder="" required=""/>
+            <input className="input" type="text" placeholder="" required=""/>
             <span>Nombre</span>
         </label>
 
         <label>
-            <input class="input" type="text" placeholder="" required=""/>
+            <input className="input" type="text" placeholder="" required=""/>
             <span>Apellido</span>
         </label>
     </div>  
             
     <label>
-        <input class="input" type="email" placeholder="" required=""/>
+        <input className="input" type="email" placeholder="" required=""/>
         <span>Correo electrónico</span>
     </label> 
         
     <label>
-        <input class="input" type="password" placeholder="" required=""/>
+        <input className="input" type="password" placeholder="" required=""/>
         <span>Contraseña</span>
     </label>
     <label>
-        <input class="input" type="password" placeholder="" required=""/>
+        <input className="input" type="password" placeholder="" required=""/>
         <span>Confirmar contraseña</span>
     </label>
-    <button class="submit">Registrar</button>
-    <p class="signin">Ya tienes una cuenta? <a href="http://localhost:3000/">Signin</a> </p>
+    <button className="submit">Registrar</button>
+    <p className="signin">Ya tienes una cuenta? <a href="http://localhost:3000/">Inicia Sesión</a> </p>
 </form>
+    </div>
     </div>
   )
 }

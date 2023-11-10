@@ -3,22 +3,6 @@
 }
 
 
-.eslogan {
-  position: absolute;
-  font-size: 25px;
-  margin-left: 29%;
-  margin-top: 12%;
-}
-
-.uvaLogo {
-  margin-top: -5%;
-  width: 40%;
-  position: absolute;
-  display:flex;
-  justify-content: left;
-
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

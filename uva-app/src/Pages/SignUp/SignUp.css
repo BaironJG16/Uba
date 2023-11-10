@@ -1,4 +1,8 @@
 .form {
+  margin-top: 1%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: 10%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -10,6 +14,22 @@
     color: #fff;
     border: 1px solid #333;
   }
+
+  .eslogan2 {
+    position: absolute;
+    font-size: 22px;
+    margin-left: 29%;
+    margin-top: 12%;
+  }
+
+  .uvaLogo2 {
+  margin-top: -5%;
+  width: 40%;
+  position: absolute;
+  display:flex;
+  justify-content: left;
+
+}
   
   .title {
     font-size: 28px;
@@ -19,7 +39,7 @@
     display: flex;
     align-items: center;
     padding-left: 30px;
-    color: #00bfff;
+    color: #ffffff;
   }
   
   .title::before {
@@ -41,7 +61,7 @@
     width: 16px;
     border-radius: 50%;
     left: 0px;
-    background-color: #00bfff;
+    background-color: #8c2c6c;
   }
   
   .message, 
@@ -73,13 +93,13 @@
   }
   
   .form label .input {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     width: 100%;
-    padding: 20px 05px 05px 10px;
+    padding: 20px 20px 6px 22px;
     outline: 0;
     border: 1px solid rgba(105, 105, 105, 0.397);
-    border-radius: 10px;
+    border-radius: 25px;
   }
   
   .form label .input + span {
@@ -99,14 +119,16 @@
   
   .form label .input:focus + span,
   .form label .input:valid + span {
-    color: #00bfff;
-    top: 0px;
+    color: #8c2c6c;
+    top: 4%;
+    padding-left: 4%;
     font-size: 0.7em;
     font-weight: 600;
   }
   
   .input {
     font-size: medium;
+    
   }
   
   .submit {
@@ -117,11 +139,11 @@
     color: #fff;
     font-size: 16px;
     transform: .3s ease;
-    background-color: #00bfff;
+    background-image: linear-gradient(163deg, #151515 0%, #8c2c6c 100%);
   }
   
   .submit:hover {
-    background-color: #00bfff96;
+    background-image: linear-gradient(163deg, #8c2c6c 0%, #151515 100%);
   }
   
   @keyframes pulse {
