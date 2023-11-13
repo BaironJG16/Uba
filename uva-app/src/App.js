@@ -47,7 +47,8 @@ function App() {
     
     <footer>
     <Footer></Footer>
-  </footer>
+    </footer>
+    
   </div>
   
   

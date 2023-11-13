@@ -1,0 +1,15 @@
+
+.container-fluid {
+   padding-left: 7%;
+}
+
+.cencinai{
+    width: 70px;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+}

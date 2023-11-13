@@ -1,241 +1,450 @@
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+*{padding: 0; margin: 0; box-sizing: border-box;}
+/* body{height: 900px;} */
+.header2 {
+	background: url('https://www.consalud.es/uploads/s1/11/58/87/0/ninos.jpeg');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment:local;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 90% 90% / 25%;
+}
+.header2 .overlay2{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient(to right bottom, #8c2c6c64 10%, #8c2c6cd4 100%);
+  padding-bottom: 12%;
+	
+}
 
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
-.fa-2x {
-font-size: 2em;
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
 }
 
 
-body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #eee;
-}
+/*-----------------------------------------CARDS STYLES-----------------------------------------*/
 
-.header {
-    height: 100vh;
-    background-image: 
-    linear-gradient(to right bottom, 
-    #8c2c6c64,
-    #8c2c6cd4),
-   url('https://ld.com.mx/blog/wp-content/uploads/2019/12/nivel-de-inventario-optimo.jpg');
-    
-  background-size: cover;
-    background-position: top;
+.InventarioIcono {
+    margin-left: 15%;
+    margin-top: 4%;
+    background-image: url(../../assets/img/Inventario.png);
+    background-size:contain;
+    background-repeat: no-repeat;
     position: relative;
-
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
-
-.brand-box {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
-
-.brand { font-size: 20px; }
-
-.text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.heading-primary {
-    color: #fff;
-    text-transform: uppercase;
-
-    backface-visibility: hidden;
-    margin-bottom: 30px;
-}
-
-.heading-primary-main {
-    display: block;
-    font-size: 26px;
-    font-weight: 400;
-    letter-spacing: 5px;
-}
-
-.heading-primary-sub {
-    display: block;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 7.4px;
-}
-
-.btn:link,
-.btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-    position: relative;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-white {
-    background-color: #fff;
-    color: #777;
-  font-size: 14px;
-}
-
-
-.uvaAlone {
-    width: 32px;
-    margin-left: 37%;
-    padding-bottom: 60px;
-}
-
-.IconNav {
-    width: 40px;
-    margin-left: 20%;
-    padding-bottom: 25px;
-    margin-top: 25%;
-}
-
-
-.fa {
-position: relative;
-display: table-cell;
-width: 60px;
-height: 36px;
-text-align: center;
-vertical-align: middle;
-font-size:20px;
-}
-
-
-.main-menu:hover,nav.main-menu.expanded {
-width:250px;
-overflow:visible;
-}
-
-.main-menu {
-background:#212121;
-border-right:1px solid #e5e5e5;
-position:absolute;
-top:0;
-bottom:0;
-height:100%;
-left:0;
-width:60px;
-overflow:hidden;
--webkit-transition:width .05s linear;
-transition:width .05s linear;
--webkit-transform:translateZ(0) scale(1,1);
-z-index:1000;
-}
-
-.main-menu>ul {
-margin:7px 0;
-}
-
-.main-menu li {
-position:relative;
-display:block;
-width:250px;
-}
-
-.main-menu li>a {
-position:relative;
-display:table;
-border-collapse:collapse;
-border-spacing:0;
-color:#999;
- font-family: arial;
-font-size: 14px;
-text-decoration:none;
--webkit-transform:translateZ(0) scale(1,1);
--webkit-transition:all .1s linear;
-transition:all .1s linear;
+    max-width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    padding-top: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 7.5px;
+    transition: 0.5s ease;
+   
+    color: #FFF;
+  }
   
-}
+  .InventarioIcono::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../../assets/img/Inventario.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 0.4s ease;
+   
+  }
+  
+  .InventarioIcono:hover::after {
+    opacity: 100;
+    
+  }
+  
+  .cardHeader {
+    text-transform: uppercase;
+    position: relative;
+    width: max-content;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    color: #8c2c6c;
+  }
+  .cardHeader::after {
+    content: "";
+    width: calc(100% + 1rem);
+    height: 2.5px;
+    transform: translateX(calc(-100% - 1rem));
+    background: rgb(255, 0, 0);
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+   
+  }
+  
+  .details {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transform: translateY(95%);
+    transition: all 0.5s ease;
+    margin-bottom: 50%;
+  }
 
-.main-menu .nav-icon {
-position:relative;
-display:table-cell;
-width:60px;
-height:36px;
-text-align:center;
-vertical-align:middle;
-font-size:18px;
-}
+  .cardText {
+    padding-bottom: 10%;
+  }
+  
+  .button {
+    background-color: #8c2c6c;
+    color: rgb(255, 255, 255);
+    padding: 2.5px 7px;
+    width: max-content;
+    border-radius: 2.5px;
+  }
+  .InventarioIcono:hover .details {
+    transform: translateY(0%);
+    transition-delay: 0.5s;
+    color: #000000;
+    background-color: rgba(193, 192, 192, 0.151);
+    border-radius: 15px;
+    backdrop-filter: blur(3px);
+  }
+  .InventarioIcono:hover .cardHeader::after {
+    transform: translateX(-1rem);
+    transition: 0.5s ease;
+    opacity: 1;
+  }
+  .InventarioIcono:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+  }
 
-.main-menu .nav-text {
+  
+  /*-----------------------------------------Usuarios-----------------------------------------*/
 
-position:relative;
-display:table-cell;
-vertical-align:middle;
-width:190px;
-  font-family: 'Titillium Web', sans-serif;
-}
+  .UsuariosIcono {
+    margin-left: 45%;
+    margin-top: -27.5%;
+    background-image: url(../../assets/img/Usuarios.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    max-width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    padding-top: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 7.5px;
+    transition: 0.5s ease;
+   
+    color: #FFF;
+  }
+  
+  .UsuariosIcono::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../../assets/img/Usuarios.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 0.4s ease;
+   
+  }
+  
+  .UsuariosIcono:hover::after {
+    opacity: 100;
+    
+  }
+  
+  .cardHeader {
+    text-transform: uppercase;
+    position: relative;
+    width: max-content;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    color: #8c2c6c;
+  }
+  .cardHeader::after {
+    content: "";
+    width: calc(100% + 1rem);
+    height: 2.5px;
+    transform: translateX(calc(-100% - 1rem));
+    background: rgb(255, 0, 0);
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+   
+  }
+  
+  .details {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transform: translateY(95%);
+    transition: all 0.5s ease;
+    margin-bottom: 43%;
+  }
 
-.main-menu>ul.logout {
-position:absolute;
-left:0;
-bottom:0;
-}
+  .cardText {
+    padding-bottom: 10%;
+  }
+  
+  .button {
+    background-color: #8c2c6c;
+    color: rgb(255, 255, 255);
+    padding: 2.5px 7px;
+    width: max-content;
+    border-radius: 2.5px;
+  }
+  .UsuariosIcono:hover .details {
+    transform: translateY(0%);
+    transition-delay: 0.5s;
+    color: #000000;
+    background-color: rgba(193, 192, 192, 0.151);
+    border-radius: 15px;
+    backdrop-filter: blur(3px);
+  }
+  .UsuariosIcono:hover .cardHeader::after {
+    transform: translateX(-1rem);
+    transition: 0.5s ease;
+    opacity: 1;
+  }
+  .UsuariosIcono:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+  }
 
-.no-touch .scrollable.hover {
-overflow-y:hidden;
-}
+  /*-----------------------------------------Registros-----------------------------------------*/
 
-.no-touch .scrollable.hover:hover {
-overflow-y:auto;
-overflow:visible;
-}
+  .RegistrosIcono {
+    margin-left: 75%;
+    margin-top: -27.5%;
+    background-image: url(../../assets/img/Registros.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    max-width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    padding-top: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 7.5px;
+    transition: 0.5s ease;
+   
+    color: #FFF;
+  }
+  
+  .RegistrosIcono::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../../assets/img/Registros.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 0.4s ease;
+   
+  }
+  
+  .RegistrosIcono:hover::after {
+    opacity: 100;
+    
+  }
+  
+  .cardHeader {
+    text-transform: uppercase;
+    position: relative;
+    width: max-content;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    color: #8c2c6c;
+  }
+  .cardHeader::after {
+    content: "";
+    width: calc(100% + 1rem);
+    height: 2.5px;
+    transform: translateX(calc(-100% - 1rem));
+    background: rgb(255, 0, 0);
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+   
+  }
+  
+  .details {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transform: translateY(95%);
+    transition: all 0.5s ease;
+    margin-bottom: 43%;
+  }
 
-a:hover,a:focus {
-text-decoration:none;
-}
+  .cardText {
+    padding-bottom: 10%;
+  }
+  
+  .button {
+    background-color: #8c2c6c;
+    color: rgb(255, 255, 255);
+    padding: 2.5px 7px;
+    width: max-content;
+    border-radius: 2.5px;
+  }
+  .RegistrosIcono:hover .details {
+    transform: translateY(0%);
+    transition-delay: 0.5s;
+    color: #000000;
+    background-color: rgba(193, 192, 192, 0.151);
+    border-radius: 15px;
+    backdrop-filter: blur(3px);
+  }
+  .RegistrosIcono:hover .cardHeader::after {
+    transform: translateX(-1rem);
+    transition: 0.5s ease;
+    opacity: 1;
+  }
+  .RegistrosIcono:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+  }
 
-nav {
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
--o-user-select:none;
-user-select:none;
-}
+/*-----------------------------------------Sedes-----------------------------------------*/
 
-nav ul,nav li {
-outline:0;
-margin:0;
-padding:0;
-}
-.main-menu li:hover>.aIcons,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
-color:#fff;
-background-color:#8c2c6c;
-border-radius: 10px;
-}
-.area {
-float: left;
-background: #e2e2e2;
-width: 100%;
-height: 100%;
-}
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
-}
+.SedesIcono {
+    margin-left: 28%;
+    margin-top: 0%;
+    background-image: url(../../assets/img/Sedes.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    padding-top: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 7.5px;
+    transition: 0.5s ease;
+   
+    color: #FFF;
+  }
+  
+  .SedesIcono::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../../assets/img/Sedes.png); 
+    background-size:contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 0.4s ease;
+   
+  }
+  
+  .SedesIcono:hover::after {
+    opacity: 100;
+    
+  }
+  
+  .cardHeader {
+    text-transform: uppercase;
+    position: relative;
+    width: max-content;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    color: #8c2c6c;
+  }
+  .cardHeader::after {
+    content: "";
+    width: calc(100% + 1rem);
+    height: 2.5px;
+    transform: translateX(calc(-100% - 1rem));
+    background: rgb(255, 0, 0);
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+   
+  }
+  
+  .details {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transform: translateY(95%);
+    transition: all 0.5s ease;
+    margin-bottom: 43%;
+  }
 
-
-.logo :hover {
-    background: none;
-}
+  .cardText {
+    padding-bottom: 10%;
+  }
+  
+  .button {
+    background-color: #8c2c6c;
+    color: rgb(255, 255, 255);
+    padding: 2.5px 7px;
+    width: max-content;
+    border-radius: 2.5px;
+  }
+  .SedesIcono:hover .details {
+    transform: translateY(0%);
+    transition-delay: 0.5s;
+    color: #000000;
+    background-color: rgba(193, 192, 192, 0.151);
+    border-radius: 15px;
+    backdrop-filter: blur(3px);
+  }
+  .SedesIcono:hover .cardHeader::after {
+    transform: translateX(-1rem);
+    transition: 0.5s ease;
+    opacity: 1;
+  }
+  .SedesIcono:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+  }
