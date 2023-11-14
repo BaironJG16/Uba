@@ -1,15 +1,26 @@
 import React from 'react'
 import uvaAlone from '../../assets/img/uvaAlone.png';
 import "./SideBar.css"
+import { useNavigate } from 'react-router-dom';
 
 
 function SideBar() {
+
+    const navigation = useNavigate();
+
+ 
+    
+    function handleUsers() {
+      navigation('/Users')
+      }
+
+
   return (
     <div>
          <div className="area"></div><nav className="main-menu">
             <ul>
                 <li className='liLogo'>
-                    <a className='logo' href="h">
+                    <a className='logo' href="./PrincipalPage">
                     <img className='uvaAlone' src={uvaAlone} alt='uva logo'></img>
                         <span className="nav-text1">
 
@@ -18,7 +29,7 @@ function SideBar() {
                   
                 </li>
                 <li className="has-subnav">
-                    <a className='aIcons' href="f">
+                    <a className='aIcons' href="./Inventory">
                     <img className='IconNav' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAs
                     TAAALEwEAmpwYAAACNklEQVR4nO2YPYgTQRSAnyAe2FidVhYW1wiWJs11YuIPZBG5E+RgZjk4sDgwjXpk3q2Nepm3J1
                     pIIhwW5sDG7jq5RhEEO1srMf6V2mghOjKZJUTI6pLdu70H88FrNmHefHnzJjML4PF4PJ6ikUhGIH2VqJ+EK7em//Vd0
@@ -36,7 +47,7 @@ function SideBar() {
                     
                 </li>
                 <li className="has-subnav">
-                    <a className='aIcons' href="f">
+                    <a className='aIcons' href="./Files">
                     <img className='IconNav' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAs
                     TAAALEwEAmpwYAAAAiElEQVR4nO3Wuw2AMAxFUa/CJG8GNqNiE5bIOlRUQVCm4SOE4+QeyQNYz7FjBgDV0bjkO2W1Eg
                     1UlEDpyQhNactflr1tYJjXs2ggOSUQeoTEGnWg6AkAvb8B0YAztXSJD3zmknMCoUdIrFEHip4A0PsbEA04U0uXuEQDi
@@ -48,7 +59,7 @@ function SideBar() {
                     
                 </li>
                 <li className="has-subnav">
-                    <a className='aIcons' href="f">
+                    <a className='aIcons' href="./BranchOffices">
                     <img className='IconNav' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAs
                     TAAALEwEAmpwYAAACz0lEQVR4nO2Zz2sTQRTHv3oQpfUmCNENEaoFj14UM7NbqwGr/4FXb3rxJhTxoIdsL9kKItKTBx
                     EMhUrrTVGPJme1YvHS7upBI/6kGxSf7Jpou9lkd2Znkyj7hXfZ7Mz7fibz3g4MkClTJmERwwnimCOOl8TwtRXL/jOG4
@@ -69,7 +80,7 @@ function SideBar() {
                    
                 </li>
                 <li>
-                    <a className='aIcons' href="f">
+                    <a className='aIcons' href="./AttendanceList">
                     <img className='IconNav' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAs
                     TAAALEwEAmpwYAAAEhElEQVR4nO2YX2gcRRzHNykaSyv4IhoFY4NIFKxJc7YhFqpV2b3bmd3c3c5e2of0QTkaTEuRgr
                     v54yWmQelDsbZQUdFS0Jo+mF6b7l7AJLaPIvjSB5GCFlRqlcQm2dtc/o3M5i4m19vb2b0tHnI/+MJyt7/vfD87c7PcM
@@ -95,7 +106,7 @@ function SideBar() {
                     </a>
                 </li>
                 <li>
-                    <a className='aIcons' href="f">
+                    <a className='aIcons' href="./Users">
                     <img className='IconNav' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAs
                     TAAALEwEAmpwYAAAFkElEQVR4nO2XfWwTZRzHi8YAUV5GHDAl0LsOMMQQlQhjdIN7emPUMQZo241tzDlWaWURCHEi4i
                     bIYGyLsOyOZdM4Erqsw0nGxmCriAnGBGOikUnQyD++oULs1k7BuOxr7rqXa+/a7bouWWJ/yfef557nuc/n6e+urUYTr
@@ -119,7 +130,7 @@ function SideBar() {
                     sOqYXgRVigD/YnuBbJ2QZEdn5AV4z48y+PyOoliry9anBCFkx6WdSG/YgsTjyXiq9FkxiRXJ2NSwFTs6/U9empc692B
                     J7e+RleA892QCVpdtbzCI8aawyx6kZyNYVpft0oQJuGzKPRvJKuyy/zxxAnZ5z0a6Cl22+xMlYO2yy3s2WtGKVrSiFS
                     3N+Os/Ec+xukPTnh8AAAAASUVORK5CYII=" alt='Usuarios'/>
-                        <span className="nav-text">
+                        <span className="nav-text" onClick={handleUsers}>
                            Usuarios
                         </span>
                     </a>
