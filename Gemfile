@@ -13,8 +13,7 @@ gem "mysql2", "~> 0.5"
 gem "puma", "~> 5.0"
 
 #Gemas que instale aparte
-
-gem 'devise', '~> 4.9', '>= 4.9.3'
+gem 'devise'
 gem 'pundit', '~> 2.3', '>= 2.3.1'
 gem 'byebug', '~> 11.1', '>= 11.1.3'
 gem 'rolify', '~> 6.0', '>= 6.0.1'

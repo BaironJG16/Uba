@@ -10,12 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_09_151943) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_14_162540) do
   create_table "ninos", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "nombre"
     t.string "apellido"
     t.date "Fecha_nacimiento"
     t.string "direccion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "posts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -80,12 +87,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_09_151943) do
   end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "nombre"
-    t.string "apellido"
-    t.integer "cedula"
-    t.string "correo"
-    t.string "direccion"
-    t.string "password", limit: 50
+    t.string "name"
+    t.string "last_name"
+    t.integer "ced"
+    t.string "direction"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

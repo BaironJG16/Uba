@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-#Nino.create(nombre: 'Pedro', apellido: 'Peréz', Fecha_nacimiento: '10/06/1999', direccion: 'Carmen lyra')
+#Nino.create(nombre: 'alexa', apellido: 'Matarrita', Fecha_nacimiento: '05/01/1999', direccion: 'Manuel Mora')
 
-#User.create(nombre: 'Andrey', apellido: 'Guillén', correo: 'Andreyguillen1603@gmail', direccion: 'Esparza')
+# User.create(nombre: 'Alexa', apellido: 'Matarrita', correo: 'alemata01@gmail', direccion: 'Manuel Mora', )
 
 #TiposUser.create(nombre: 'Andrey', apellido: 'Guillén', puesto: 'Chofer')
 
@@ -20,6 +20,12 @@
 
 #User_role.create(user_id: '1', role_id: '1')
 
-user = User.find(1)
-role = Role.find_by(name: :admin)
-user.add_role(role.name)
+# user = User.find(1)
+# role = Role.find_by(name: :admin)
+# user.add_role(role.name)
+
+# User.create!(
+#     correo: 'ejemplo@correo.com',
+#     password: 'password123',
+#     password_confirmation: 'password123'
+#   )

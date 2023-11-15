@@ -1,2 +1,0 @@
-class RangoRegistroController < ApplicationController
-end
