@@ -1,58 +1,150 @@
-*{padding: 0; margin: 0; box-sizing: border-box;}
-/* body{height: 900px;} */
-.header2 {
-	background: url('https://www.consalud.es/uploads/s1/11/58/87/0/ninos.jpeg');
-	text-align: center;
-	width: 100%;
-	height: auto;
-	background-size: cover;
-	background-attachment:local;
+
+.loader{
 	position: relative;
-	overflow: hidden;
-	border-radius: 0 0 90% 90% / 25%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	   -moz-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	     -o-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+}
+
+.loader h1{
+	margin-top: 10%;
+  margin-left: -85%;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 6em;
+	color: rgba(255,255,255,.1);
+	background-image: url(https://wallpapers.com/images/hd/blue-and-purple-3840-x-2160-t20ps2kmo6okyx3g.jpg);
+	background-repeat: repeat-x;
+	-webkit-background-clip: text;
+	animation: animate 15s linear infinite;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+}
+
+@keyframes animate{
+	0%{
+		background-position: left 0px top 80px;
+	}
+	40%{
+		background-position: left 800px top -50px;
+	}
+	80%{
+		background-position: left 1800px top -50px;
+	}
+	100%{
+		background-position: left 2400px top 80px;
+	}
 }
 
 
-.header2 .overlay2{
-	width: 100%;
-	height: 100%;
-	padding: 50px;
-	color: #FFF;
-	text-shadow: 1px 1px 1px #333;
-  background-image: linear-gradient(to right bottom, #8c2c6c64 10%, #8c2c6cd4 100%);
-  padding-bottom: 12%;
-	
+
+
+
+
+
+
+
+.carton {
+  width: 630px;
+  position:absolute;
+  margin-right: 15%;
+  margin-top: -40%;
+  
 }
 
-h1 {
-	font-family: 'Dancing Script', cursive;
-	font-size: 80px;
-	margin-bottom: 30px;
-}
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
-h3, p {
-	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 30px;
-}
-
-
-.frasePrincipal {
- 
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
 }
 
 
-button {
-	border: none;
-	outline: none;
-	padding: 10px 20px;
-	border-radius: 50px;
-	color: #333;
-	background: #fff;
-	margin-bottom: 50px;
-	box-shadow: 0 3px 20px 0 #0000003b;
+
+.header3 {
+    height: 100vh;
+    background-color: #00000071;
+    backdrop-filter: blur(5px);
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-button:hover{
-	cursor: pointer;
+
+.brand-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.brand { font-size: 20px; }
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.heading-primary-sub2 {
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+    margin-left: -30%
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+  font-size: 14px;
+}
+
+
+.PrincipalIcons {
+  margin-top: 30%;
 }
 
 
@@ -560,7 +652,7 @@ button:hover{
     border-radius: 15px;
   }
 
-  video {
+  .fondo {
     position: fixed;
     min-width: 100%;
     min-height: 100%;

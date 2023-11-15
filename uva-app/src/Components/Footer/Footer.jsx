@@ -4,7 +4,7 @@ import name from '../../assets/img/name.png'
 
 function Footer() {
   return (
-    <div><footer className="bg-light text-center text-lg-start">
+    <div><footer className="footer">
     <div className="text-center p-3">
       © 2023 Copyright:
       <img className='uvaName' src={name} alt='logoname'></img>

@@ -2,25 +2,35 @@ import React from 'react'
 import './PrincipalPage.css'
 import NavBarPrincipal from '../../Components/NavBarPrincipal/NavBarPrincipal';
 import SideBar from '../../Components/SideBar/SideBar';
-import fondo from '../../assets/video/fondo.webm';
+import fondo from '../../assets/img/fondo.jpeg';
+import niños2 from '../../assets/img/niños2.png';
 
 
 function PrincipalPge() {
   return (
     <div>
       
-      <video src={fondo} autoplay loop muted></video>
+      <img className='fondo' src={fondo} alt='fondo'></img>
 
-<header className="header2">
+
 <NavBarPrincipal></NavBarPrincipal>
-<header>
-	<div className="overlay2">
-<h1>Bienvenido/a</h1>
-<h3>Que gusto volverte a ver! :)</h3>
-<p className='frasePrincipal'>En este momento estás en la página principal, <br />puedes encontrar otras secciones a tu izquierda o bien haciendo scroll hacia abajo dandole clic a los iconos.</p>
-		</div>
+
+
+<header className="header3">
+	
+	<div className="text-box">
+    <div className="loader">
+		<h1 className="heading-primary">Bienvenido/a</h1>
+			<span className="heading-primary-sub2">Algo tengo que poner aquí</span>
+		<img className='carton' src={niños2} alt="niños" />
+	</div>
+  </div>
+  
 </header>
-</header>
+
+
+
+
 <div class="InventarioIcono">
   <div class="details">
     <div class="cardHeader">Inventario</div>
@@ -79,6 +89,7 @@ function PrincipalPge() {
 </div>
 
     </div>
+   
   )
 }
 
