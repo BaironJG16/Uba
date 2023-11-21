@@ -1,8 +1,10 @@
 import React from 'react'
-import uvaAlone from '../../assets/img/uvaAlone.png';
 import "./Inventory.css"
 import SideBar from '../../Components/SideBar/SideBar';
-import NavBarPrincipal from '../../Components/NavBarPrincipal/NavBarPrincipal';
+import NavBarPrincipal from '../../Components/NavBarPrincipal/NavBarPrincipal'
+import carton from '../../assets/img/carton.png';
+import fondo from '../../assets/img/fondo.jpeg';
+
 
 
 function Invetory() {
@@ -11,19 +13,17 @@ function Invetory() {
 
   return (
     <div>
-
-<header className="header">
-    <NavBarPrincipal></NavBarPrincipal>
-	<div className="brand-box">
-	</div>
-	
+<img className='fondo' src={fondo} alt='fondo'></img>
+<NavBarPrincipal></NavBarPrincipal>
+<header className="header3">
 	<div className="text-box">
-		<h1 className="heading-primary">
-			<span className="heading-primary-main">Bienvenido/a a tu inventario</span>
-			<span className="heading-primary-sub">Aquí podrás llevar control de tus artículos</span>
-		</h1>
-		<a href="kj" className="btn btn-white btn-animated">Discover our tours</a>
+    <div className="loader3">
+		<h1 className="heading-primary">Inventario</h1>
+			<span className="heading-primary-sub2">Algo tengo que poner aquí</span>
+		<img className='carton2' src={carton} alt="carton" />
 	</div>
+  </div>
+  
 </header>
 
   <SideBar></SideBar>

@@ -71,7 +71,6 @@ font-size: 2em;
     backdrop-filter: blur(5px);
     background-position: top;
     position: relative;
-
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
@@ -107,7 +106,7 @@ font-size: 2em;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
-.heading-primary-sub2 {
+.heading-primary-sub3 {
     display: flex;
     font-size: 18px;
     font-weight: 700;

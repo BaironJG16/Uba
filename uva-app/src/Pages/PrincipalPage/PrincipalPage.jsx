@@ -7,6 +7,8 @@ import niños2 from '../../assets/img/niños2.png';
 
 
 function PrincipalPge() {
+
+  
   return (
     <div>
       
@@ -21,7 +23,7 @@ function PrincipalPge() {
 	<div className="text-box">
     <div className="loader">
 		<h1 className="heading-primary">Bienvenido/a</h1>
-			<span className="heading-primary-sub2">Algo tengo que poner aquí</span>
+			<span className="heading-primary-sub3">Algo tengo que poner aquí</span>
 		<img className='carton' src={niños2} alt="niños" />
 	</div>
   </div>
