@@ -15,7 +15,7 @@ function Files() {
 <header className="header3">
 	<div className="text-box">
     <div className="loader3">
-		<h1 className="heading-primary">Inventario</h1>
+		<h1 className="heading-primary">Archivos</h1>
 			<span className="heading-primary-sub2">Algo tengo que poner aquí</span>
 		<img className='Archivos' src={Archivos} alt="Archivos" />
 	</div>

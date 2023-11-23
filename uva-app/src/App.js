@@ -6,7 +6,6 @@ import SignUp from './Pages/SignUp/SignUp';
 import Footer from './Components/Footer/Footer';
 import PrincipalPge from './Pages/PrincipalPage/PrincipalPage';
 import Inventory from './Pages/Inventory/Inventory';
-import Users from './Pages/Users/Users';
 import BranchOffices from './Pages/BranchOffices/BranchOffices';
 import AttendanceList from './Pages/AttendanceList/AttendanceList';
 import Files from './Pages/Files/Files';
@@ -34,12 +33,6 @@ function App() {
     {
       path: "/Inventory",
       element: <Inventory></Inventory>
-   
-    },
-
-    {
-      path: "/Users",
-      element: <Users></Users>
    
     },
 

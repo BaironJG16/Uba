@@ -24,7 +24,7 @@ function handlePrincipal() {
       <header><NavBar></NavBar> </header>
       <img className='uvaLogo' src={uva} alt='uva logo'></img>
       <p className='eslogan'> UVA App, organiza y administra <br/>
-       tu empresa de la mejor manera. </p>
+        tu empresa de la mejor manera. </p>
 
 
     <div className="card">
@@ -56,3 +56,4 @@ function handlePrincipal() {
 }
 
 export default Login
+

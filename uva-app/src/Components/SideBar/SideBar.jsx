@@ -1,18 +1,10 @@
 import React from 'react'
 import uvaAlone from '../../assets/img/uvaAlone.png';
 import "./SideBar.css"
-import { useNavigate } from 'react-router-dom';
 
 
 function SideBar() {
 
-    const navigation = useNavigate();
-
- 
-    
-    function handleUsers() {
-      navigation('/Users')
-      }
 
 
   return (
@@ -105,41 +97,38 @@ function SideBar() {
                         </span>
                     </a>
                 </li>
-                <li>
-                    <a className='aIcons' href="./Users">
-                    <img className='IconNav' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAs
-                    TAAALEwEAmpwYAAAFkElEQVR4nO2XfWwTZRzHi8YAUV5GHDAl0LsOMMQQlQhjdIN7emPUMQZo241tzDlWaWURCHEi4i
-                    bIYGyLsOyOZdM4Erqsw0nGxmCriAnGBGOikUnQyD++oULs1k7BuOxr7rqXa+/a7bouWWJ/yfef557nuc/n6e+urUYTr
-                    WhFK1r/yyKELGMYpooQ0k0I8RBCMBiHZjKXyWR6kGGYckLIvxLo4TAM028wGCwJCQnTNZOtSkpKHiCEOJXASUAMBuJm
-                    GCZfM5mKEPLGWOCJJGnryW7NZKikpKQ4AyH/qBVYz4qt9vi4AWChjbBQp2GmfoCZ7oOFhi9U6VjWMwxTGgo0K4OA321
-                    AdzWLy2UsDP7XD4QPbqIXwkJfHQFWTA8s1CewUBtDCFwLhM7dYkDdXgNucikYcKYAzSNpK2WF52Bo7uUw4bVLYaZ/Gw
-                    U+MGVKexFC3AJM9maCmldZXK+WQyMgLQfZoTfTLfXwm5bOgJm6pRLeF7Nuu4KACBMKGAoZFOhVL2ChqkcFzV8CVCcBX
-                    DJg0UkEqDvCAURKgBACdfCZ1DxY6L+DgucuBipWA+1pwMV0X07ogUzpPGqXdM9DuesuSwVqsmlwuToZcOC4sObN7LWf
-                    qhMw00cUwbN0wMEVwDnjCLg0VYlSgc+le7qr9J6G1wzDYFyODnyOXCBwXFjjrtSrayGYqZ/84XXA/qeBs6nK4NKMrBt
-                    AdvyCYYHKNW+jiR1Q20JwsgPuqjWlak7/ST/4PcuBMymjg8sFAJPW7Le3k+1WLdCc8o2608+k9vhBDILVbI8Hl7dYBi
-                    wb93sb0RUBAuVhCBxVJ2ChGpQEuLx48AoCsnF/gTa/vRvZx9DM9qmA96IlNU6lAP2FkkBYLWSmumX7n00xwZky+rPgF
-                    Oasz1YFL97ATP8SMQEL9YfiPZrZbaG+hQeaWOHhzVINPyhwL4IC94Pdp+fdJNx7j0G/wyD+pBDSf4YVx4RrYcGLAha6
-                    WArR3yr5shol/a3PBT4DJcHu467SI1TCFgiU6M6ngY4xCHSk48YOXUj4BfU9c2LtV5tmZ7b13jyeNhAMXrgWk9XWE2v
-                    7zBF/8u7McUlcWfmID+yCMQS8Ed8W6MS5ivDAFC3nLaJ4rzvG3IoZqadRvP9o0NM/cKBMnDN7awu0nPcOxXkKhD3CkK
-                    BKBSgRrH4q0PQEcH6tT0ZIa7JvrH6qOMcn4P8HZ9EHmKblPY0U74WQuH1fi3CPbm7Ed+UbZPC3KlIx3+QU58wruiau8
-                    cXTJOwV1qchytRqECrKizBFy3vbRyC80Nb0IibzvAgYm+FASXEJbhxPF3Po9bcw/4Um8dqsLWehPfmnRMALivM4VUHn
-                    tOTMZTnjR2sq1/b8VTc1KPz3/AzoKxm3sS79/aKOouGe1XJ9+/wABrPoxF3EZLWJoEqZtfVDLCz/VbZuMK+M4bg1U6w
-                    uW5G10+ZecXgVlh98Bs31S4MKVHHLxDn6ynWwdtnvvPyxrYDmb8+leG9fEAhoOQ/iiq9jzrZ2zExzYKbxDGabWzFv95
-                    fQVruDwUPLe3uFl0FQ9rwredMKXbZGq8sOIRvqN4pwyUdXw1v7kAz+Nj8NCYdXinMyTj8vrhGS2Xb4K92pgBaIVE55d
-                    4U4eXv7EISQgos7sfJIou+Ey1bBwetwt3Y6btc+jDouHgnv+OATjulR2GUbXick41zthAhoOc8FRf7CLts+KcBQ8toL
-                    sOqYXgRVigD/YnuBbJ2QZEdn5AV4z48y+PyOoliry9anBCFkx6WdSG/YgsTjyXiq9FkxiRXJ2NSwFTs6/U9empc692B
-                    J7e+RleA892QCVpdtbzCI8aawyx6kZyNYVpft0oQJuGzKPRvJKuyy/zxxAnZ5z0a6Cl22+xMlYO2yy3s2WtGKVrSiFS
-                    3N+Os/Ec+xukPTnh8AAAAASUVORK5CYII=" alt='Usuarios'/>
-                        <span className="nav-text" onClick={handleUsers}>
-                           Usuarios
+
+                <li className="has-subnav">
+                    <a className='aIcons' href="./Inventory">
+                    <img className='IconNav' src="data:image/png;base64,iVBORw0KGgoAAAANSU
+                    hEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0ElEQVR4nO2Z
+                    PW/TUBSG/RfCAAvNkERC6goVH6qlwkA3JJCA9g7uBmzwAwiFhTYrA0lMGqgESmxVomIrI6
+                    WCBZZG2WhxmtaRUCNShnZJD7oX7AYrDnZjxyf2PdKr2L6xpffxe04+LAi8ePHqrNul+ghR
+                    9aVpZWePqDpg0y1F354oaJ/G89ovMa/tibL29lKhfkbw0Pxu0CZ7mRflWlOUa2BRUyzWR/
+                    oGQFR9KWiTvUTvfBfzhtS+AUwjjb0hFnt7AC0vEgCY1cM809AB2D2dYkINIP7k6z+yO273
+                    Pquk0hYo0iPYHD1vAtgYvQBlaZathR5AWZo1jVtF19ABIB6L3m1q9mHmvXksnVkxkxAZAO
+                    nMiutzUbRA3KHctIDTGdC3QQwApNIWM2skwc0MCAQAGYCczoBQANjoMgPS8xECUO7xMVia
+                    eRx+AFKXGYB6CBJEX4VDB4C41FAAuLNQheyDbLgAQCXhSNR85dxVFuvc/efRAnC4loD1sU
+                    lmvnr2CtxbqEQHwOFaAn6Op3w1jwbAQSYJ7Y9H+3TbME/jT9vAD/MoABzMJ5lRapga7zRP
+                    X/00jwJA22K4c5uudTv3uD+aUAIAS78z8xeT0F79sxYJAPA3Ca3LKabOeeBn/FEBABtxAG
+                    pIW4D0ocgDIC6BPXv9EiAX81b5EzcDSwBxobtKFVpyynsA2dgPeHHyFGoA199sQ77w1Hvz
+                    R1pGC2BK0WGm+NlP885agRxjiHnxd/m1xW/wXR7zH8D/WoEEAGAA0XfeCiSA6E8UatCcEx
+                    xrR290lZtroAEw+arOnumhBhD3sQWMh5ocwBziBBAfNRQJIAMA4GaK2wFwcw10MwA4gBje
+                    BBCELdDQqrD/bgr2l29AY3M9WgCaXxahXUya+3SbHosMAPBAHIBdEZ4AnbcA4TNAj+4QDK
+                    o4gBxPAPAWyPEZANEdgtnY6gAT8CFov7x4CXjqN5SnhI505RnGAAAAAElFTkSuQmCC" 
+                    alt='Order'/>
+                        <span className="nav-text">
+                            Pedidos
                         </span>
                     </a>
-                </li>     
+                    
+                </li>
+               
             </ul>
 
             <ul className="logout">
                 <li>
-                   <a className='aIcons' href="f">
+                   <a className='aIcons' href="./">
                          <i className="fa fa-power-off fa-2x"></i>
                         <span className="nav-text">
                             Logout

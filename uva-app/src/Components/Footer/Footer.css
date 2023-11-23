@@ -1,8 +1,4 @@
 
-.text-center p-3 {
-background-color: rgb(255, 0, 0);
-}
-
 .uvaName {
     width: 80px;
 }
@@ -11,7 +7,6 @@ background-color: rgb(255, 0, 0);
     background: rgba(0, 0, 0, 0.247);
     bottom: 0;
     width: 100%;
+    position:relative;
     
-  
-  
 }

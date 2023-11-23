@@ -1,0 +1,8 @@
+.manos {
+    width: 630px;
+    position:absolute;
+    margin-right: 15%;
+    margin-top: -55%;
+    height: 400px;
+    transform: rotate(-6deg);
+  }
